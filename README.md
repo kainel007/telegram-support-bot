@@ -15,8 +15,8 @@ Easy way to use Telegram bot to hide your identity. Useful for support, anonymou
 You need to specify these env variables to run this bot. If you run it locally, you can also write them in `.env` text file.
 
 ``` bash
-TELEGRAM_TOKEN=  # your bot's token
-TELEGRAM_SUPPORT_CHAT_ID=  # chat_id where the bot will forward all incoming messages
+TELEGRAM_TOKEN=  # 5193034541:AAHoxB3-wiyo4pzf07-xLDSmzxa249C3-UU
+TELEGRAM_SUPPORT_CHAT_ID=  # chat_id -744948738
 
 # optional params
 HEROKU_APP_NAME=  # name of your Heroku app for webhook setup
