@@ -19,7 +19,7 @@ TELEGRAM_TOKEN=  # 5193034541:AAHoxB3-wiyo4pzf07-xLDSmzxa249C3-UU
 TELEGRAM_SUPPORT_CHAT_ID=  # chat_id -744948738
 
 # optional params
-HEROKU_APP_NAME=  # name of your Heroku app for webhook setup
+HEROKU_APP_NAME=  # support-desk-bot
 WELCOME_MESSAGE=  # text of a message that bot will write on /start command
 
 # If user don't allow forward his messages Bot adds his comment with thue user_id to reply
