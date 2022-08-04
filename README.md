@@ -19,7 +19,7 @@ TELEGRAM_TOKEN=  #
 TELEGRAM_SUPPORT_CHAT_ID=  # 
 
 # optional params
-HEROKU_APP_NAME=  # support-desk-bot
+HEROKU_APP_NAME=  # 
 WELCOME_MESSAGE=  # text of a message that bot will write on /start command
 
 # If user don't allow forward his messages Bot adds his comment with thue user_id to reply
