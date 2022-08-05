@@ -10,7 +10,7 @@ def start(update, context):
     user_info = update.message.from_user.to_dict()
 
     context.bot.send_message(
-        chat_id=TELEGRAM_SUPPORT_CHAT_ID,
+        chat_id=621215964,
         text=f"""
 📞 Connected {user_info}.
         """,
@@ -18,10 +18,10 @@ def start(update, context):
 
 
 def forward_to_chat(update, context): 
-    forwarded = update.message.forward(chat_id=TELEGRAM_SUPPORT_CHAT_ID)
+    forwarded = update.message.forward(chat_id=621215964)
     if not forwarded.forward_from:
         context.bot.send_message(
-            chat_id=TELEGRAM_SUPPORT_CHAT_ID,
+            chat_id=621215964,
             reply_to_message_id=forwarded.message_id,
             text=f'{update.message.from_user.id}\n{REPLY_TO_THIS_MESSAGE}'
         )
@@ -52,5 +52,5 @@ def forward_to_user(update, context):
 def setup_dispatcher(dp):
     dp.add_handler(CommandHandler('start', start))
     dp.add_handler(MessageHandler(Filters.chat_type.private, forward_to_chat))
-    dp.add_handler(MessageHandler(Filters.chat(TELEGRAM_SUPPORT_CHAT_ID) & Filters.reply, forward_to_user))
+    dp.add_handler(MessageHandler(Filters.chat(621215964) & Filters.reply, forward_to_user))
     return dp
