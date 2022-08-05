@@ -44,7 +44,7 @@ def forward_to_user(update, context):
         )
     else:
         context.bot.send_message(
-            chat_id=TELEGRAM_SUPPORT_CHAT_ID,
+            chat_id=621215964,
             text=WRONG_REPLY
         )
 
